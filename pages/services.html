@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services - Tech Coderyx offers comprehensive IT solutions in education, insurance, healthcare, and organic farming.">
+  <title>Our Services | Tech Coderyx Pvt. Ltd.</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+
+    .service-detail:nth-child(even) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .service-detail:nth-child(even) .service-text {
+      order: 2;
+    }
+
+    .service-detail:nth-child(even) .service-image {
+      order: 1;
+    }
+
+    .service-text h3 {
+      color: var(--dark-green);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-text p {
+      color: var(--gray);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .service-features li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #eee;
+      color: var(--dark-text);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .service-features li::before {
+      content: '✓';
+      color: var(--primary-green);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .service-image {
+      background: linear-gradient(135deg, var(--light-green), var(--primary-green));
+      border-radius: 10px;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .service-image div {
+      text-align: center;
+    }
+
+    .service-image-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .tech-stack {
+      background: var(--light-gray);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+    }
+
+    .tech-stack h4 {
+      color: var(--dark-green);
+      margin-bottom: 1rem;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .tech-tag {
+      background: var(--white);
+      color: var(--primary-green);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid var(--primary-green);
+    }
+
+    @media (max-width: 768px) {
+      .service-detail {
+        grid-template-columns: 1fr;
+      }
+
+      .service-detail:nth-child(even) .service-text {
+        order: 1;
+      }
+
+      .service-detail:nth-child(even) .service-image {
+        order: 2;
+      }
+
+      .service-image {
+        min-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header>
+    <nav>
+      <div class="logo">
+        <span>Tech</span> Coderyx
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+      </ul>
+      <button class="cta-button">Get Started</button>
+      <button class="mobile-menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Services</h1>
+      <p>Comprehensive IT solutions tailored to your industry</p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <h2 class="section-title">Specialized Solutions for Every Industry</h2>
+    <p class="section-subtitle">Leveraging technology to solve real-world business challenges</p>
+
+    <!-- SERVICE 1: EDUCATION -->
+    <div class="service-detail">
+      <div class="service-text">
+        <h3>Education Technology</h3>
+        <p>Transform the way students learn and teachers teach with our comprehensive educational technology solutions. From interactive learning platforms to student management systems, we empower educational institutions with modern tools.</p>
+        
+        <ul class="service-features">
+          <li>E-Learning Platforms</li>
+          <li>Student Management Systems</li>
+          <li>Virtual Classroom Solutions</li>
+          <li>Assessment & Grading Tools</li>
+          <li>Learning Analytics & Reporting</li>
+          <li>Mobile Learning Apps</li>
+        </ul>
+
+        <p><strong>Why Choose Us?</strong> With 50,000+ students across 15+ countries using our platforms, we understand the complexities of educational technology. Our solutions are scalable, user-friendly, and designed for educators and learners alike.</p>
+
+        <div class="tech-stack">
+          <h4>Technology Stack</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">AI/ML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-image">
+        <div>
+          <div class="service-image-icon">📚</div>
+          <p>Empower Learning, Shape the Future</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 2: INSURANCE -->
+    <div class="service-detail">
+      <div class="service-text">
+        <h3>Insurance Solutions</h3>
+        <p>Streamline your insurance operations with our comprehensive insurance management systems. From policy administration to claims processing, we deliver solutions that improve efficiency and customer satisfaction.</p>
+        
+        <ul class="service-features">
+          <li>Policy Administration Systems</li>
+          <li>Claims Management Platform</li>
+          <li>Premium Calculation Engine</li>
+          <li>Customer Portal & Self-Service</li>
+          <li>Compliance & Risk Management</li>
+          <li>Integration with Third-Party Systems</li>
+        </ul>
+
+        <p><strong>Why Choose Us?</strong> Our insurance solutions have reduced claim settlement time by 60% and improved operational efficiency by 40% for major insurers. We understand regulatory requirements and ensure full compliance.</p>
+
+        <div class="tech-stack">
+          <h4>Technology Stack</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">Microservices</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-image">
+        <div>
+          <div class="service-image-icon">🛡️</div>
+          <p>Security, Compliance, Efficiency</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 3: MEDICAL & HEALTHCARE -->
+    <div class="service-detail">
+      <div class="service-text">
+        <h3>Medical & Healthcare Solutions</h3>
+        <p>Revolutionize healthcare delivery with our innovative medical technology solutions. Build secure, HIPAA-compliant systems that enhance patient care and operational efficiency.</p>
+        
+        <ul class="service-features">
+          <li>Electronic Health Records (EHR)</li>
+          <li>Patient Management Systems</li>
+          <li>Telemedicine Platforms</li>
+          <li>Appointment Scheduling</li>
+          <li>Medical Billing & Coding</li>
+          <li>Analytics & Insights</li>
+        </ul>
+
+        <p><strong>Why Choose Us?</strong> Our healthcare systems manage 1000+ daily patient interactions with 99.9% uptime. We ensure HIPAA compliance, data security, and seamless integration with existing healthcare infrastructure.</p>
+
+        <div class="tech-stack">
+          <h4>Technology Stack</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">HL7/FHIR</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Cloud Security</span>
+            <span class="tech-tag">Encryption</span>
+            <span class="tech-tag">Real-time Sync</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-image">
+        <div>
+          <div class="service-image-icon">🏥</div>
+          <p>Better Health, Better Care</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 4: ORGANIC FARMING -->
+    <div class="service-detail">
+      <div class="service-text">
+        <h3>Organic Farming Technology</h3>
+        <p>Empower farmers with technology that increases yield, ensures sustainability, and connects them directly with consumers. Our smart farming solutions combine IoT, data analytics, and market access.</p>
+        
+        <ul class="service-features">
+          <li>IoT Sensor Networks</li>
+          <li>Crop Monitoring System</li>
+          <li>Yield Prediction Analytics</li>
+          <li>Supply Chain Management</li>
+          <li>Direct-to-Consumer Platform</li>
+          <li>Farmer Knowledge Base</li>
+        </ul>
+
+        <p><strong>Why Choose Us?</strong> Our platform helps 500+ organic farmers monitor crops in real-time, optimize resource usage, and reach certified retail partners. Farmers report 25% yield improvement and higher profitability.</p>
+
+        <div class="tech-stack">
+          <h4>Technology Stack</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">GIS</span>
+            <span class="tech-tag">Cloud Platforms</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-image">
+        <div>
+          <div class="service-image-icon">🌾</div>
+          <p>Sustainable Farming, Smart Technology</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 5: CUSTOM DEVELOPMENT -->
+    <div class="service-detail">
+      <div class="service-text">
+        <h3>Custom Enterprise Solutions</h3>
+        <p>Your business is unique. Our custom development services create tailor-made software solutions that perfectly match your requirements, business processes, and growth ambitions.</p>
+        
+        <ul class="service-features">
+          <li>Enterprise Software Development</li>
+          <li>API Development & Integration</li>
+          <li>Database Architecture & Optimization</li>
+          <li>Legacy System Modernization</li>
+          <li>Business Process Automation</li>
+          <li>24/7 Technical Support</li>
+        </ul>
+
+        <p><strong>Why Choose Us?</strong> Our team has successfully delivered 150+ custom projects across industries. We follow agile methodologies, maintain transparent communication, and ensure projects are delivered on time and within budget.</p>
+
+        <div class="tech-stack">
+          <h4>Technology Stack</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">.NET</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">SQL/NoSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-image">
+        <div>
+          <div class="service-image-icon">⚙️</div>
+          <p>Custom Solutions, Unlimited Possibilities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 6: CLOUD & DEVOPS -->
+    <div class="service-detail">
+      <div class="service-text">
+        <h3>Cloud & DevOps Services</h3>
+        <p>Modernize your infrastructure with cloud-native solutions and DevOps practices. Achieve scalability, reliability, and cost-efficiency while reducing time-to-market for your applications.</p>
+        
+        <ul class="service-features">
+          <li>Cloud Architecture Design</li>
+          <li>Migration & Modernization</li>
+          <li>CI/CD Pipeline Implementation</li>
+          <li>Infrastructure as Code</li>
+          <li>Monitoring & Performance Optimization</li>
+          <li>Security & Compliance</li>
+        </ul>
+
+        <p><strong>Why Choose Us?</strong> We have successfully migrated 50+ applications to cloud platforms. Our DevOps practices reduce deployment time by 80% and improve system reliability. We support AWS, Azure, GCP, and on-premise solutions.</p>
+
+        <div class="tech-stack">
+          <h4>Technology Stack</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">GCP</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">Jenkins</span>
+            <span class="tech-tag">Terraform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-image">
+        <div>
+          <div class="service-image-icon">☁️</div>
+          <p>Cloud-Native, Future-Ready</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <div class="container">
+    <section class="cta-section">
+      <h2>Ready to Start Your Digital Journey?</h2>
+      <p>Choose the service that fits your needs or let us create a custom solution</p>
+      <button class="cta-button" onclick="window.location.href='../pages/contact.html'">Schedule a Consultation</button>
+    </section>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Tech Coderyx</h4>
+        <p style="color: #ecf0f1; margin-bottom: 1rem;">Delivering innovative IT solutions since 2014. Trusted by 50+ organizations globally.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Twitter">𝕏</a>
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="GitHub">⚙</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Education Technology</a></li>
+          <li><a href="#services">Insurance Solutions</a></li>
+          <li><a href="#services">Healthcare Software</a></li>
+          <li><a href="#services">Organic Farming Tech</a></li>
+          <li><a href="#services">Custom Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-contact">
+        <h4>Contact & Support</h4>
+        <p>📧 info@techcoderyx.com</p>
+        <p>📞 +1-800-CODERYX</p>
+        <p>🕐 Mon - Fri: 9:00 AM - 6:00 PM IST</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tech Coderyx Pvt. Ltd. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

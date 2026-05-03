@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Tech Coderyx - Get in touch with our team for IT solutions and consultations.">
+  <title>Contact Us | Tech Coderyx Pvt. Ltd.</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-info {
+      background: var(--light-gray);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .contact-info h3 {
+      color: var(--dark-green);
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: start;
+      margin-bottom: 2rem;
+      gap: 1rem;
+    }
+
+    .contact-item-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .contact-item-content h4 {
+      color: var(--dark-green);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-item-content p {
+      color: var(--gray);
+      margin: 0;
+    }
+
+    .contact-form {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow-light);
+    }
+
+    .contact-form h3 {
+      color: var(--dark-green);
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      color: var(--dark-text);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary-green);
+      box-shadow: 0 0 5px rgba(45, 150, 89, 0.2);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: var(--primary-green);
+      color: var(--white);
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: var(--dark-green);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .map-container {
+      background: linear-gradient(135deg, var(--light-green), var(--primary-green));
+      border-radius: 10px;
+      min-height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info {
+        order: 2;
+      }
+
+      .contact-form {
+        order: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header>
+    <nav>
+      <div class="logo">
+        <span>Tech</span> Coderyx
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../index.html#expertise">Expertise</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cta-button">Get Started</button>
+      <button class="mobile-menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Get In Touch With Us</h1>
+      <p>We'd love to hear from you. Let's discuss your next project</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Send us a Message</h3>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="education">Education Technology</option>
+              <option value="insurance">Insurance Solutions</option>
+              <option value="medical">Medical & Healthcare</option>
+              <option value="farming">Organic Farming Tech</option>
+              <option value="custom">Custom Development</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <p style="color: var(--gray); font-size: 0.9rem; margin-top: 1rem;">* Required fields</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-content">
+            <h4>Our Offices</h4>
+            <p>Headquarters: New Delhi, India</p>
+            <p>Regional: USA, UK, Australia</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-content">
+            <h4>Email</h4>
+            <p><a href="mailto:info@techcoderyx.com">info@techcoderyx.com</a></p>
+            <p><a href="mailto:support@techcoderyx.com">support@techcoderyx.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-content">
+            <h4>Phone</h4>
+            <p>+1-800-CODERYX</p>
+            <p>+91-11-XXXX-XXXX</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div class="contact-item-content">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+            <p>Saturday & Sunday: Available for urgent queries</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div class="contact-item-content">
+            <h4>Live Chat Support</h4>
+            <p>Available during business hours for immediate assistance</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #ddd;">
+          <h4 style="color: var(--dark-green); margin-bottom: 1rem;">Follow Us</h4>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-green); color: white; border-radius: 50%; font-size: 1.2rem;">f</a>
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-green); color: white; border-radius: 50%; font-size: 1.2rem;">𝕏</a>
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-green); color: white; border-radius: 50%; font-size: 1.2rem;">in</a>
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-green); color: white; border-radius: 50%; font-size: 1.2rem;">⚙</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP SECTION ===== -->
+  <section style="background: var(--light-gray);">
+    <h2 class="section-title">Visit Us</h2>
+    <p class="section-subtitle">Multiple locations to serve you better</p>
+    <div class="container">
+      <div class="map-container">
+        <div>
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+          <p>Interactive map would display here - Global office locations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Tech Coderyx</h4>
+        <p style="color: #ecf0f1; margin-bottom: 1rem;">Delivering innovative IT solutions since 2014. Trusted by 50+ organizations globally.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Twitter">𝕏</a>
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="GitHub">⚙</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../index.html#expertise">Services</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Education Technology</a></li>
+          <li><a href="#">Insurance Solutions</a></li>
+          <li><a href="#">Healthcare Software</a></li>
+          <li><a href="#">Organic Farming Tech</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-contact">
+        <h4>Quick Contact</h4>
+        <p>📧 info@techcoderyx.com</p>
+        <p>📞 +1-800-CODERYX</p>
+        <p>🕐 Mon - Fri: 9:00 AM - 6:00 PM IST</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tech Coderyx Pvt. Ltd. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! Our team will contact you within 24 hours.');
+      this.reset();
+    });
+  </script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
