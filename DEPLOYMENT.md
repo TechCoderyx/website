@@ -367,4 +367,4 @@ Total: ~4,300 lines of production-ready code
 
 ---
 
-**Questions?** Email: info@techcoderyx.com or contact your web developer.
+**Questions?** Email: info@ztsi.in or contact your web developer.

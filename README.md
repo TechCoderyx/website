@@ -260,7 +260,7 @@ Potential additions:
 ## 🤝 Support
 
 For customization and support:
-- Email: info@techcoderyx.com
+- Email: info@ztsi.in
 - Phone: +1-800-CODERYX
 - Hours: Mon-Fri, 9 AM - 6 PM IST
 

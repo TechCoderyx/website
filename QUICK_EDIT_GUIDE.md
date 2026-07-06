@@ -52,7 +52,7 @@ This guide shows you how to make the most common website updates.
 
 **Find:**
 ```html
-<p>📧 info@techcoderyx.com</p>
+<p>📧 info@ztsi.in</p>
 <p>📞 +1-800-CODERYX</p>
 ```
 
