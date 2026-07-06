@@ -1,4 +1,4 @@
-// Tech Coderyx - Main JavaScript File
+// ZTSI - Main JavaScript File
 
 document.addEventListener('DOMContentLoaded', function() {
   initializeScrollAnimations();
@@ -81,9 +81,30 @@ function initializeButtons() {
 
 // ===== CONTACT FORM MODAL =====
 function openContactForm() {
-  alert('Contact form would open here. Implement with: name, email, phone, company, message fields.');
-  // In a real app, you'd open a modal or navigate to a contact page
+  const modal = document.getElementById('contact-modal');
+  if (modal) {
+    modal.style.display = 'block';
+  }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Setup modal close buttons
+  const modal = document.getElementById('contact-modal');
+  const closeBtn = document.querySelector('.close-modal');
+  
+  if (closeBtn && modal) {
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+  }
+  
+  // Close modal when clicking outside
+  window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
 
 // ===== HEADER SCROLL EFFECT =====
 window.addEventListener('scroll', function() {
@@ -133,4 +154,66 @@ if (aboutSection) {
   statsObserver.observe(aboutSection);
 }
 
-console.log('Tech Coderyx website initialized successfully!');
+console.log('ZTSI website initialized successfully!');
+
+// ===== FORM SUBMISSION & TOAST =====
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('consultation-form');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      // Prevent default mailto behavior for better UX (as it may fail if no client is configured)
+      e.preventDefault();
+      
+      // Hide the modal
+      const modal = document.getElementById('contact-modal');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+      
+      // Show toaster message
+      showToast('Thank you! The backend team will contact you shortly.');
+      
+      // Reset form
+      contactForm.reset();
+    });
+  }
+});
+
+function showToast(message) {
+  let toast = document.getElementById('toast-message');
+  
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toast-message';
+    toast.style.position = 'fixed';
+    toast.style.bottom = '30px';
+    toast.style.right = '30px';
+    toast.style.backgroundColor = '#2c3e50'; // Using a nice dark color
+    toast.style.color = '#ffffff';
+    toast.style.padding = '16px 24px';
+    toast.style.borderRadius = '8px';
+    toast.style.boxShadow = '0 10px 25px rgba(0,0,0,0.2)';
+    toast.style.zIndex = '10000';
+    toast.style.fontSize = '16px';
+    toast.style.fontWeight = '500';
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateY(20px)';
+    toast.style.transition = 'all 0.3s ease';
+    document.body.appendChild(toast);
+  }
+  
+  toast.textContent = message;
+  
+  // Trigger animation
+  setTimeout(() => {
+    toast.style.opacity = '1';
+    toast.style.transform = 'translateY(0)';
+  }, 10);
+  
+  // Hide after 4 seconds
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateY(20px)';
+  }, 4000);
+}

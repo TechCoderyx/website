@@ -25,7 +25,7 @@ ssh-add -l
 
 # Step 4: Configure git locally
 Write-Host "`n[Step 4] Configuring Git for signed commits..."
-cd "c:\Hitesh\Projects\Tech Coderyx"
+cd "c:\Hitesh\Projects\ZTSI"
 git config gpg.format ssh
 git config commit.gpgsign true
 git config user.signingkey "C:\Users\hitesh.gupta\.ssh\id_hiteshgupta158"

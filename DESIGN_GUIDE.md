@@ -1,4 +1,4 @@
-# Tech Coderyx Website - Design & Documentation Guide
+# ZTSI Website - Design & Documentation Guide
 
 ## 🎨 Design System
 
@@ -393,4 +393,4 @@ HTML Pages (24 hours):
 ---
 
 **Last Updated**: May 3, 2026  
-**Maintained By**: Tech Coderyx Dev Team
+**Maintained By**: ZTSI Dev Team

@@ -1,6 +1,6 @@
-# ✅ Tech Coderyx Website - Project Completion Report
+# ✅ ZTSI Website - Project Completion Report
 
-**Project**: Professional Static Website for Tech Coderyx Pvt. Ltd.  
+**Project**: Professional Static Website for ZTSI  
 **Completion Date**: May 3, 2026  
 **Status**: ✅ COMPLETE & READY TO DEPLOY  
 
@@ -160,7 +160,7 @@ All 4 mentioned domains covered with detailed descriptions.
 ## 📁 File Structure
 
 ```
-Tech Coderyx/
+ZTSI/
 ├── index.html                (850 lines)  ← START HERE
 ├── pages/
 │   ├── about.html           (720 lines)  About company
@@ -191,7 +191,7 @@ Total: ~4,300 lines of production-ready code
 
 ### Option 2: Run with Local Server
 ```bash
-cd "c:\Hitesh\Projects\Tech Coderyx"
+cd "c:\Hitesh\Projects\ZTSI"
 python -m http.server 8000
 # Open http://localhost:8000
 ```
@@ -539,4 +539,4 @@ Questions? Check the included documentation or hire a developer to help with cus
 
 ---
 
-*Created with ❤️ for Tech Coderyx Pvt. Ltd.*
+*Created with ❤️ for ZTSI*

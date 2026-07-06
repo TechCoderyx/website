@@ -1,10 +1,10 @@
-# Tech Coderyx Pvt. Ltd. - Corporate Website
+# Zoombei Technology Services India Pvt. Ltd. - Corporate Website
 
-A professional, modern, and responsive static website for Tech Coderyx Pvt. Ltd., a 12-year-old IT company specializing in Education, Insurance, Medical, and Organic Farming technology solutions.
+A professional, modern, and responsive static website for ZTSI, a 12-year-old IT company specializing in Education, Insurance, Medical, and Organic Farming technology solutions.
 
 ## 📋 Project Overview
 
-This website showcases Tech Coderyx's expertise, projects, team, and services across multiple industries. It's built with vanilla HTML5, CSS3, and JavaScript for optimal performance and no dependencies.
+This website showcases ZTSI's expertise, projects, team, and services across multiple industries. It's built with vanilla HTML5, CSS3, and JavaScript for optimal performance and no dependencies.
 
 ## 🎨 Color Palette
 
@@ -27,7 +27,7 @@ This color scheme conveys:
 ## 📁 Folder Structure
 
 ```
-Tech Coderyx/
+ZTSI/
 ├── index.html                 # Main homepage
 ├── pages/
 │   ├── about.html            # About company page with timeline
@@ -266,7 +266,7 @@ For customization and support:
 
 ## 📄 License
 
-&copy; 2026 Tech Coderyx Pvt. Ltd. All rights reserved.
+&copy; 2026 ZTSI All rights reserved.
 
 ---
 

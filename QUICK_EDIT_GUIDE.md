@@ -1,4 +1,4 @@
-# Tech Coderyx Website - Quick Edit Guide
+# ZTSI Website - Quick Edit Guide
 
 ## 🎯 Most Common Edits
 
@@ -13,7 +13,7 @@ This guide shows you how to make the most common website updates.
 **Find:**
 ```html
 <div class="logo">
-  <span>Tech</span> Coderyx
+  <span>ZT</span>SI
 </div>
 ```
 
@@ -110,7 +110,7 @@ Also update in:
 ```html
 <div class="about-text">
   <h3>Who We Are</h3>
-  <p>Tech Coderyx Pvt. Ltd. is a leading technology solutions provider...</p>
+  <p>ZTSI is a leading technology solutions provider...</p>
   <p>We specialize in creating custom software...</p>
   <p>Our commitment to quality...</p>
 </div>
@@ -350,7 +350,7 @@ Adjust pixel values for different breakpoints if needed.
 
 ```html
 <meta name="description" content="Your page description (155-160 chars)">
-<title>Your Page Title | Tech Coderyx</title>
+<title>Your Page Title | ZTSI</title>
 ```
 
 **Update in:**

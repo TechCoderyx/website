@@ -1,4 +1,4 @@
-# Tech Coderyx Website - Deployment & Setup Guide
+# ZTSI Website - Deployment & Setup Guide
 
 ## 🚀 Quick Start
 
@@ -12,7 +12,7 @@ Your professional website is ready to use! Here's how to get started:
 
 **Using Python 3:**
 ```bash
-cd "c:\Hitesh\Projects\Tech Coderyx"
+cd "c:\Hitesh\Projects\ZTSI"
 python -m http.server 8000
 ```
 Then open: http://localhost:8000
@@ -70,7 +70,7 @@ Then open: http://localhost:8000
 ## 📝 Content to Update
 
 ### Homepage (index.html)
-- [ ] Company name and logo (already says "Tech Coderyx")
+- [ ] Company name and logo (already says "ZTSI")
 - [ ] Hero headline and subtitle
 - [ ] About section content
 - [ ] Expertise descriptions
@@ -342,7 +342,7 @@ Consider adding:
 ## 📄 File Summary
 
 ```
-Tech Coderyx Website
+ZTSI Website
 ├── index.html (850 lines) - Homepage
 ├── pages/
 │   ├── about.html (720 lines) - About page with timeline
