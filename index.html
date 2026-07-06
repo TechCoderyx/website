@@ -359,6 +359,25 @@
     </div>
   </div>
 
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content" style="max-width: 700px;">
+      <span class="close-modal" id="close-project-modal">&times;</span>
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+        <div id="project-modal-icon" style="font-size: 3.5rem;"></div>
+        <div>
+          <div id="project-modal-category" style="font-size: 0.8rem; font-weight: 700; color: #2d9659; letter-spacing: 1px; margin-bottom: 5px;"></div>
+          <h2 id="project-modal-title" style="margin-bottom: 0;"></h2>
+        </div>
+      </div>
+      <div id="project-modal-body" style="line-height: 1.7; color: #666; font-size: 1.05rem;">
+      </div>
+      <div style="margin-top: 30px; text-align: right;">
+        <button class="cta-button" onclick="document.getElementById('project-modal').style.display='none'; document.getElementById('contact-modal').style.display='block';">Discuss a Similar Project</button>
+      </div>
+    </div>
+  </div>
+
   <script src="assets/js/script.js"></script>
 </body>
 

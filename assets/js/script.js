@@ -217,3 +217,51 @@ function showToast(message) {
     toast.style.transform = 'translateY(20px)';
   }, 4000);
 }
+
+// ===== PROJECT MODAL LOGIC =====
+document.addEventListener('DOMContentLoaded', function() {
+  const projectLinks = document.querySelectorAll('.project-link');
+  const projectModal = document.getElementById('project-modal');
+  const closeBtn = document.getElementById('close-project-modal');
+  
+  if (projectModal && closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      projectModal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+      if (event.target === projectModal) {
+        projectModal.style.display = 'none';
+      }
+    });
+  }
+  
+  projectLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const card = this.closest('.project-card');
+      
+      if (card && projectModal) {
+        const title = card.querySelector('h4').textContent;
+        const category = card.querySelector('.project-category').textContent;
+        const desc = card.querySelector('.project-description').textContent;
+        const icon = card.querySelector('.project-image div div').textContent;
+        
+        document.getElementById('project-modal-title').textContent = title;
+        document.getElementById('project-modal-category').textContent = category;
+        document.getElementById('project-modal-icon').textContent = icon;
+        
+        // Generate a more detailed case study view dynamically
+        document.getElementById('project-modal-body').innerHTML = `
+          <p><strong>Overview:</strong> ${desc}</p>
+          <p style="margin-top: 15px;"><strong>The Challenge:</strong> The client required a robust, scalable, and secure solution that could adapt to their rapidly growing user base without compromising on performance or user experience.</p>
+          <p style="margin-top: 15px;"><strong>Our Solution:</strong> We architected a custom digital ecosystem leveraging modern frameworks. By focusing on intuitive design and robust backend infrastructure, we ensured seamless operations across all touchpoints.</p>
+          <p style="margin-top: 15px;"><strong>The Impact:</strong> The new implementation increased user engagement by over 40%, significantly reduced operational overhead, and provided a future-proof foundation for the client's business.</p>
+        `;
+        
+        projectModal.style.display = 'block';
+      }
+    });
+  });
+});
