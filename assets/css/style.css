@@ -162,6 +162,7 @@ nav {
 .nav-logo-img {
   height: 60px;
   width: auto;
+  margin-left: -25px;
 }
 
 .nav-links {
