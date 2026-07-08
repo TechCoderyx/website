@@ -1,4 +1,4 @@
-# Zoombei Technology Services India Pvt. Ltd. - Corporate Website
+# ZTSI - Corporate Website
 
 A professional, modern, and responsive static website for ZTSI, a 12-year-old IT company specializing in Education, Insurance, Medical, and Organic Farming technology solutions.
 
